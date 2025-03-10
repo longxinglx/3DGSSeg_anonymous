@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Multi-Granularity 3D-Image-Text Alignment for Open-Vocabulary Tooth Instance Segmentation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -139,17 +139,15 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/framework.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          An illustration of the proposed approach.
-        </h2>
-      </div>
+      <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/framework.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        An illustration of the proposed approach.
+      </h2>
       <div class="content has-text-justified">
         <p>
-          Given 3D Gaussian representations in an oral scenario and instruction text describing the corresponding content, the hierarchical feature distillation assigns the 3D and 2D instance feature and hierarchical feature to each neural Gaussian. \
+          Given 3D Gaussian representations in an oral scenario and instruction text describing the corresponding content, the hierarchical feature distillation assigns the 3D and 2D instance feature and hierarchical feature to each neural Gaussian. 
           Multimodal semantic alignment learns the consistency between the 3D instance and the hierarchical feature, their corresponding rendered maps, and text embeddings for coherent open-vocabulary segmentation.
         </p>
       </div>
@@ -166,12 +164,12 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Instance segmentation in an oral scenario plays an important role in the dental digitization process. \
-            3D Gaussian splatting (3DGS) has emerged as an effective approach to real-time 3D segmentation. \
-            However, existing methods lack detailed comprehension of the scenes, limiting their ability to segment and interpret complex structures. \
-            Furthermore, it is difficult to integrate multimodal data to maintain semantic consistency across the 3D spatial and 2D image domains, degrading the quality of open-vocabulary segmentation. \
-            A multi-granularity 3D-image-text alignment approach is proposed for open vocabulary tooth instance segmentation, including a hierarchical feature distillation (HFD) module and a multimodal semantic alignment (MSA) module. \
-            HFD learns hierarchical instance features from 2D foundation models to enhance the 3D perception capability, and MSA aligns text embeddings with multi-granularity information of 3D Gaussians and their rendered instance and hierarchical maps. \
+            Instance segmentation in an oral scenario plays an important role in the dental digitization process. 
+            3D Gaussian splatting (3DGS) has emerged as an effective approach to real-time 3D segmentation. 
+            However, existing methods lack detailed comprehension of the scenes, limiting their ability to segment and interpret complex structures. 
+            Furthermore, it is difficult to integrate multimodal data to maintain semantic consistency across the 3D spatial and 2D image domains, degrading the quality of open-vocabulary segmentation. 
+            A multi-granularity 3D-image-text alignment approach is proposed for open vocabulary tooth instance segmentation, including a hierarchical feature distillation (HFD) module and a multimodal semantic alignment (MSA) module. 
+            HFD learns hierarchical instance features from 2D foundation models to enhance the 3D perception capability, and MSA aligns text embeddings with multi-granularity information of 3D Gaussians and their rendered instance and hierarchical maps. 
             The experimental results on two tooth segmentation datasets indicate that our approach improves multiview consistency by a margin compared to prevailing approaches.
           </p>
         </div>
@@ -186,19 +184,21 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/Hierarchical feature distillation.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Hierarchical feature distillation.
-        </h2>
+      <div id="results-carousel" class="carousel results-carousel"></div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/Hierarchical feature distillation.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Hierarchical feature distillation.
+          </h2>
+        </div>
       </div>
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/Multimodal semantic alignment.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Multimodal semantic alignment.
-       </h2>
+        </h2>
       </div>
     </div>
   </div>
