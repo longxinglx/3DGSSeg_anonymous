@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Multi-Granularity 3D-Image-Text Alignment for Open-Vocabulary Tooth Instance Segmentation</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -56,25 +56,27 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Yan Tian</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Long Xing</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Weiping Ding</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Zhejiang Gongshang University</span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
+                        <!-- TODO: 论文链接待修改 -->
+                        <!-- <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark"> -->
+                        <a href="https://songqt3.github.io/CrownDesign/" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
@@ -82,20 +84,14 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
                   </span>
 
                   <!-- Github link -->
+                  <!-- TODO: 代码链接待修改 -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <!-- <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark"> -->
+                    <a href="https://songqt3.github.io/CrownDesign/" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -105,14 +101,14 @@
                 </span>
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
-                </a>
+                </a> -->
               </span>
             </div>
           </div>
@@ -124,11 +120,10 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
@@ -137,8 +132,31 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
+
+<!-- 流程图 -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/framework.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          An illustration of the proposed approach.
+        </h2>
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          Given 3D Gaussian representations in an oral scenario and instruction text describing the corresponding content, the hierarchical feature distillation assigns the 3D and 2D instance feature and hierarchical feature to each neural Gaussian. \
+          Multimodal semantic alignment learns the consistency between the 3D instance and the hierarchical feature, their corresponding rendered maps, and text embeddings for coherent open-vocabulary segmentation.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -148,7 +166,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Instance segmentation in an oral scenario plays an important role in the dental digitization process. \
+            3D Gaussian splatting (3DGS) has emerged as an effective approach to real-time 3D segmentation. \
+            However, existing methods lack detailed comprehension of the scenes, limiting their ability to segment and interpret complex structures. \
+            Furthermore, it is difficult to integrate multimodal data to maintain semantic consistency across the 3D spatial and 2D image domains, degrading the quality of open-vocabulary segmentation. \
+            A multi-granularity 3D-image-text alignment approach is proposed for open vocabulary tooth instance segmentation, including a hierarchical feature distillation (HFD) module and a multimodal semantic alignment (MSA) module. \
+            HFD learns hierarchical instance features from 2D foundation models to enhance the 3D perception capability, and MSA aligns text embeddings with multi-granularity information of 3D Gaussians and their rendered instance and hierarchical maps. \
+            The experimental results on two tooth segmentation datasets indicate that our approach improves multiview consistency by a margin compared to prevailing approaches.
           </p>
         </div>
       </div>
@@ -162,96 +186,121 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
+      <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/Hierarchical feature distillation.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Hierarchical feature distillation.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/Multimodal semantic alignment.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
+          Multimodal semantic alignment.
        </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+      </div>
     </div>
   </div>
-</div>
 </div>
 </section>
 <!-- End image carousel -->
 
 
-
-
-<!-- Youtube video -->
+<!-- Example Image -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3">Example</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+         <!-- Your image here -->
+         <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+         <h2 class="subtitle has-text-centered">
+           Example 1
+         </h2>
+       </div>
+       <div class="item">
+         <!-- Your image here -->
+         <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+         <h2 class="subtitle has-text-centered">
+            Example 2
+         </h2>
+       </div>
+       <div class="item">
+         <!-- Your image here -->
+         <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+         <h2 class="subtitle has-text-centered">
+           Example 3
+        </h2>
+       </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container"> -->
+
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      
+      <!-- <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
-          <div class="publication-video">
+          <div class="publication-video"> -->
+
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
+          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
+
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
+
+            <!-- <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
+          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
+
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
+            
+            <!-- <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
+            
             <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
+
+            <!-- <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -260,7 +309,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,11 +319,12 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
 <!--BibTex citation -->
+<!-- TODO: 待修改 -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
