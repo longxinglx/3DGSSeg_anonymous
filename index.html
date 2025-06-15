@@ -160,12 +160,19 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Instance segmentation in an oral scenario plays an important role in the dental digitization process.
+            <!-- Instance segmentation in an oral scenario plays an important role in the dental digitization process.
             3D Gaussian Splatting (3DGS) has emerged as an effective approach to real-time 3D segmentation tasks.
             However, existing methods lack detailed comprehension of the scenes, which limits their ability to segment and interpret complex structures. Furthermore, it is difficult to integrate multimodal data to maintain semantic consistency across the 3D spatial and 2D image domains, degrading the quality of open-vocabulary oral instance segmentation.
             To this end, a multi-granularity 3D-image-text alignment approach is proposed, including a hierarchical feature distillation (HFD) module and a multimodal semantic alignment (MSA) module.
             HFD learns hierarchical instance features from 2D foundation models to enhance the 3D perception capability, while MSA aligns text embeddings with multi-granularity information of 3D Gaussians and their rendered instances and hierarchical maps.
-            The experimental results on two oral segmentation datasets indicate that our approach improves multiview consistency, semantic perception, and text fidelity by a margin compared to the prevailing approaches.
+            The experimental results on two oral segmentation datasets indicate that our approach improves multiview consistency, semantic perception, and text fidelity by a margin compared to the prevailing approaches. -->
+            Instance segmentation in an oral scenario plays an important role in the dental digitization process. 
+            3D Gaussian Splatting (3DGS) has emerged as an effective approach to real-time 3D segmentation tasks. 
+            However, existing methods lack detailed comprehension of the scenes, which limits their ability to segment and interpret complex structures. 
+            Furthermore, it is difficult to integrate multimodal data to maintain semantic consistency across the 3D spatial and 2D image domains, degrading the quality of open-vocabulary oral instance segmentation. 
+            To this end, a multi-granularity 3D-image-text alignment approach is proposed, including a hierarchical feature distillation (HFD) module and a multimodal semantic alignment (MSA) module. 
+            HFD learns hierarchical instance features from 2D foundation models to enhance the 3D perception capability, while MSA aligns text embeddings with multi-granularity information of 3D Gaussians and their rendered instances and hierarchical maps. 
+            The experimental results on two oral segmentation datasets indicate that our approach improves multiview consistency, semantic perception, and text fidelity by a margin compared to the prevailing approaches. 
           </p>
         </div>
       </div>
@@ -183,16 +190,18 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/Hierarchical_feature_distillation.png" alt="MY ALT TEXT"/>
+        <img src="static/images/HFD.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Hierarchical feature distillation.
+          <!-- Hierarchical feature distillation. -->
+          An illustration of hierarchical feature distillation.
         </h2>
       </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/Multimodal_semantic_alignment.png" alt="MY ALT TEXT"/>
+      <img src="static/images/MSA.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Multimodal semantic alignment.
+        <!-- Multimodal semantic alignment. -->
+        An illustration of multimodal semantic alignment.
       </h2>
     </div>
   </div>
@@ -207,6 +216,17 @@
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Example</h2>
+      <div class="item">
+        <!-- Your image here -->
+        <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2> -->
+        <img src="static/images/ab_effect.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Evaluation of the proposed modules on the Shining3D oral segmentation dataset.
+        </h2>
+      </div>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
@@ -225,9 +245,29 @@
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2> -->
-        <img src="static/images/ab_effect.png" alt="MY ALT TEXT"/>
+        <img src="static/images/bad.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Evaluation of the proposed modules on the Shining3D oral segmentation dataset.
+          Illustration of the drawbacks in our approach.
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- Quantitative Comparison -->
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Quantitative Comparison</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/Quantitative_Comparison.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Effectiveness comparison of the Shining3D oral segmentation dataset and the Aoralscan3 oral segmentation dataset. 
         </h2>
       </div>
   </div>
